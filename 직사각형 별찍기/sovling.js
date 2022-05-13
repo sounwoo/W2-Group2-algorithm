@@ -8,28 +8,16 @@
 
 const a = 2, b = 3;
 
-// 별 모양 문자를 저장할 변수 선언.
 let star = "";
 
 // a:가로, b:세로.
 for (let k = 0; k < b; k++) {
-    // star에 '*'를 추가, a만큼 반복.
     for (i = 0; i < a; i++) {
+        // star에 * 추가
         star += "*"
     }
-    // a만큼 별문자 저장후 다음 열로 넘어가기.
+    // 다음 열로 이동.
     star += "\n"
 }
 
 console.log(star);
-
-
-
-// best sovling
-
-// const n = data.split(" ");
-// const a = Number(n[0]), b = Number(n[1]);
-// const row = '*'.repeat(a)
-// for(let i =0; i < b; i++){
-//     console.log(row)
-// }
