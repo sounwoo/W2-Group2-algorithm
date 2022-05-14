@@ -9,8 +9,7 @@
 
 function solution(n) {
     let sum = 0;
-    let num = n.toString(); //숫자 n을 문자열로 변환
-    for(i = 0; i < num.length; i++) {
+    for(i = 0; i < String(n).length; i++) {
         sum += parseInt(num[i],10); //문자열 안의 숫자를 숫자로 변환하여 더함.
     }
     return answer = sum;
