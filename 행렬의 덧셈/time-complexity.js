@@ -1,6 +1,6 @@
 // 시간복잡도 계산
 // best sovling 시간복잡도 : 1 + N^2
-// sovling 시간복잡도 : 
+// sovling 시간복잡도 : 2N^2
 
 
 function solution(arr1, arr2) {
