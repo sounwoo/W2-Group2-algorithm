@@ -23,4 +23,4 @@ function solution(a, b) {
     }
     return answer;
 }
-console.log(solution(3,5))
+console.log(solution(3,3))

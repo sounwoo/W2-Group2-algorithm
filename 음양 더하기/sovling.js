@@ -23,3 +23,8 @@ function solution(absolutes, signs) {
     }
     return answer;
 }
+
+var a = [4,7,12];
+var b = [true, false, true];
+
+console.log(solution(a,b));
