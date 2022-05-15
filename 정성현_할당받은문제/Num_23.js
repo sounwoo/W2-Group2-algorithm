@@ -9,7 +9,7 @@ function solution(n) {
     for(var i = 0; i < arr.length; i++){
         answer.push(Number(arr[i]));
     }
-    answer.sort((a,b) => b - a);//내림차순 정렬로 인한 오류
+    answer.sort((a,b) => b - a);//내림차순 정렬로 인한 오류로 무조건 sort는 좋지않다.
 
     return answer;
 }
