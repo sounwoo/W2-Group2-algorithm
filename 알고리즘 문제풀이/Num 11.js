@@ -10,7 +10,7 @@
 function solution(x, n) {
     var answer = [];
 
-    for(let i = i; i <= n; i++){ //x씩 증가하는 숫자(x의 배수)를 n = (x*n)
+    for(let i = 1; i <= n; i++){ //x씩 증가하는 숫자(x의 배수)를 n = (x*n)
         answer.push(x*i); // 리스트(문자열)을 return해야 함으로 push를 씀
     }
 
