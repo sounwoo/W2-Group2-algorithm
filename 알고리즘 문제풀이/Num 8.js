@@ -11,5 +11,5 @@ function solution(arr) {
     return answer / arr.length; // 총합 = 10 / 4(arr.length) = 평균값
 }
 
-console.log(arr([1, 2, 3, 4]))
-console.log(arr([5, 5]))
+console.log(solution([1, 2, 3, 4]))
+console.log(solution([5, 5]))

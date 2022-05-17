@@ -7,8 +7,8 @@ process.stdin.setEncoding('utf8');
 process.stdin.on('data', data => {
     const n = data.split(" ");
     const a = Number(n[0]), b = Number(n[1]);
-    const row = '*'.repeat(a) // a만큼 repeat해서 * 붙여주기
-    for(let i =0; i < b; i++){ // b반큼 반복
+    const row = '*'.repeat(a) // a만큼 repeat반복 해서 * 붙여주기
+    for(let i in b){ // b반큼 반복
         console.log(row)
     }
 

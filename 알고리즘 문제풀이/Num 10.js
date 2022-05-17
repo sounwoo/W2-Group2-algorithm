@@ -14,8 +14,6 @@ function solution(arr1, arr2) {
             // answer[0][1] = arr1[0][1] + arr2[0][1]
             // answer[1][0] = arr1[1][0] + arr2[1][0]
             // answer[1][1] = arr1[1][1] + arr2[1][1]
-
-
         }
     
     }
