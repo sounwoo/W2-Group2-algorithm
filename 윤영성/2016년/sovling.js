@@ -26,9 +26,11 @@
 
 function solution(a, b) {
     var answer = "";
-    var someday = new Date(2016, a - 1, b); //month는 index 값이라 0부터 1월.
+    var someday = new Date(2016,a-1,b); //month는 index 값이라 0부터 1월.
     var day = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]; //일~월 = 0~6
 
     answer = day[someday.getDay()] //getDay 함수로 해당 날짜의 요일 가져와 배열에서 찾기
     return answer;
 }
+
+console.log(solution(1,1))

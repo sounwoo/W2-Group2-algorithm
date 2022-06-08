@@ -7,13 +7,18 @@
 // n은 길이 10,000이하인 자연수입니다.
 
 
-var answer = '';
-for (let i = 0; i < n; i++) {
-    if (i % 2 == 0){
-        answer += '수'; //나머지 짝수일때 '수' 넣기
-    } else {
-        answer += '박'; //나머지 홀수일때 '박' 넣기
+function solution(n) {
+    var answer = '';
+
+    for (let i = 0; i < n; i++) {
+        if (i % 2 == 0){
+            answer += '수';
+        } else {
+            answer += '박';
+        }
     }
+    return answer
 }
-var n = 7;
-console.log(answer);
+
+console.log(solution(3));
+console.log(solution(4));

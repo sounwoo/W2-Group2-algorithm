@@ -31,6 +31,9 @@ function solution(s) {
     }
 }
 
+console.log(solution("pPoooyY"));
+console.log(solution("Pyy"));
+
 
 // 런타임 에러
 // function solution(s){
@@ -44,5 +47,5 @@ function solution(s) {
 //     }
 // }
 
-// var s = 'pPoooyY'
-// console.log(solution(s));
+// console.log(solution("pPoooyY"));
+// console.log(solution("Pyy"));

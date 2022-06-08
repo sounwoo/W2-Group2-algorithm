@@ -15,7 +15,7 @@
 function solution(absolutes, signs) {
     let answer = 0;
     for (let i = 0; i < absolutes.length; i++) {
-        if (signs[i] == true) { //true면 answer에 더하고 아니면 빼기
+        if (signs[i] == true) {
             answer += absolutes[i];
         } else {
             answer -= absolutes[i];
@@ -23,8 +23,4 @@ function solution(absolutes, signs) {
     }
     return answer;
 }
-
-var a = [4,7,12];
-var b = [true, false, true];
-
-console.log(solution(a,b));
+console.log(solution)
