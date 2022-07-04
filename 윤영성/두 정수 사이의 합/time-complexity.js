@@ -9,7 +9,7 @@ function solution(a, b) {
         for (i = b; i <= a; i++) { // a의 길이만큼 반복 : N
             answer += i; // 대입연산 : 1
         }
-    } else {
+    } else { 
         for (i = a; i <= b; i++) { // b의 길이만큼 반복 : N
             answer += i; // 대입연산 : 1
         }
@@ -17,6 +17,6 @@ function solution(a, b) {
     return answer;
 }
 // 테스트
-console.log(solution(3, 5))
+console.log(solution(3,5))
 
 // (1 * N) + (1 * N) + 1 = 1 + 2N
