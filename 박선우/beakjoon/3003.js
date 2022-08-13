@@ -8,11 +8,9 @@ function anwer() {
     for (let i = 0; i < price.length; i++) {
         if (input[i] !== price[i]) {
             idx.push(price[i] - input[i]);
-        } else if (input[i] === price[i]) {
-            idx.push(price[i]);
         }
     }
-    return idx.toString().replace(/,/g, ' ');
+    return idx.join(' ');
 }
 
 console.log(anwer());
