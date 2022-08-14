@@ -11,9 +11,11 @@ const input = fs.readFileSync('./input.txt').toString().trim().split('\n').map(N
 // console.log(4);
 
 if (input[0] > 0) {
-    input[1] > 0 ? console.log(1) : console.log(4);
-} else if (input[0] < 0) {
-    input[1] > 0 ? console.log(2) : console.log(3);
+    // x 좌표가 양수라면 (1 or 4)
+    input[1] > 0 ? console.log(1) : console.log(4); // (y 좌표가 양수(1), 음수(4) )
+} else {
+    // x 좌표가 음수라면 (2 or 4)
+    input[1] > 0 ? console.log(2) : console.log(3); // (y 좌표가 양수(2), 음수(3) )
 }
 
 // const readline = require('readline');
