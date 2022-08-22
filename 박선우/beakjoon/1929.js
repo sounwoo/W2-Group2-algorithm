@@ -1,24 +1,22 @@
 const input = require('fs').readFileSync('./input.txt').toString().split(' ').map(Number);
 
-const [min, max] = input;
-let A = [];
+// 자연수의 모든 약수를 찾을 때 가운데 약수(제곱근)까지만 확인하면 된다.
+const [M, N] = input;
+const isPrimeNumber = Array(N + 1).fill(true);
+isPrimeNumber[1] = false;
 
-for (let i = min; i <= max; i++) {
-    if (i % 2 === 0) {
-        A.push(false);
-    } else if (i % 3 == 0 && i / 3 != 1) {
-        A.push(false);
-    } else if (i % 5 == 0 && i / 5 != 1) {
-        A.push(false);
-    } else if (i % 7 == 0 && i / 7 != 1) {
-        A.push(false);
-    } else {
-        A.push(i);
+for (let n = 2; n <= Math.ceil(Math.sqrt(N)); n++) {
+    if (isPrimeNumber[n]) {
+        let m = 2;
+        while (n * m <= N) {
+            isPrimeNumber[n * m] = false;
+            m++;
+        }
     }
 }
 
-A = A.filter((v) => v !== false);
-
-for (let i = 0; i < A.length; i++) {
-    console.log(A[i]);
+for (let n = M; n <= N; n++) {
+    if (isPrimeNumber[n]) {
+        console.log(n);
+    }
 }

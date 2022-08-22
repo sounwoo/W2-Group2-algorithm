@@ -3,6 +3,7 @@ const input = require('fs').readFileSync('./input.txt').toString().split(' ').ma
 let num = input;
 
 let A = 2;
+
 while (num > 1) {
     let sum = num % A;
     if (sum == 0) {
